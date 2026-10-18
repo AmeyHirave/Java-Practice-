@@ -52,3 +52,8 @@ public class CheckAscendingArray {
         }
     }
 } */
+
+
+    /*
+        "The method crashes with an ArrayIndexOutOfBoundsException on sorted arrays because on the final iteration, arr[i + 1] looks beyond the end of the array. The unsorted array didn't crash only because it returned false early on the first iteration. The fix is to stop the loop at i < arr.length - 1 so i + 1 never exceeds the bounds."
+    */
